@@ -940,7 +940,7 @@ button:focus {
 }
 
 .checkbox {
-    
+    margin-right: 9px;
     display: block;
     
 }
@@ -993,3 +993,5 @@ button:focus {
 .footer-label {
     
 }
+
+
