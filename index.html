@@ -409,19 +409,26 @@
                     </ul>
                 </div>
                 </ul>
+            
+                    <form class="footer-submit">
+                        <div class="footer-submit-container">
+                            <b class="submit-title">Подпишитесь на рассылку</b>
+                            
+                                <label for="email" class="footer-label"></label>
+                                <input type="email"
+                                name="mail"
+                                id="email"
+                                class="footer-submit-input"
+                                placeholder="E-mail">
+                                <button type="submit" class="footer-submit-button">Подписаться
+                                    <svg class="send-icon" width="24px" height="24px">
+                                        <use href="/symbol-defs.svg#icon-send"></use>
+                                    </svg>
+                                </button>
+                        </div>
+                    </form>
+                    
             </div>
-            <b>Подпишитесь на рассылку</b>
-            <form action="">
-                <label for="email" class="footer-label"></label>
-                <input type="email"
-                name="mail"
-                id="email"
-                placeholder="E-mail">
-                <button type="submit">Подписаться</button>
-                
-                
-            </form>
-        </div>
         
     </footer>
 
@@ -470,7 +477,7 @@
                     <a href="">Условия договора</a>
                 </label>
             </div>
-            <button type="button" class="modal-send">Отправить</button>
+            <button type="submit" class="modal-send">Отправить</button>
         </form>
         
         <button type="button" class="btn-close" data-modal-close>x</button>
