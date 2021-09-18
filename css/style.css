@@ -305,7 +305,7 @@ button:focus {
 
 .list .list-item::before {
     display: inline-block;
-    content: ;
+    content: "";
     width: 120px;
     height: 270px;
     background-size: contain;
