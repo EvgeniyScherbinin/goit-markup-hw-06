@@ -16,7 +16,6 @@
         integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/style.css" />
-    <link rel="stylesheet" href="./css/main.css" />
 </head>
 
 <body style="font-family:Roboto">
@@ -304,7 +303,7 @@
             </div>
         </section>
 
-<!------ ПОСТОЯННЫЕ КЛИЕНТЫ ------>
+        <!------ ПОСТОЯННЫЕ КЛИЕНТЫ ------>
 
         <section class="clients">
             <div class="container">
@@ -359,7 +358,7 @@
     <!-- Футер -->
     <footer class="footer">
         <div class="container">
-            <div class="test">
+            <div class="footer-left-col">
                 <div class="footer-logo">
                     <a href="" class="link" lang="en"><span class="logo-first">Web</span><span
                             class="logo-second-footer">Studio</span></a>
@@ -409,83 +408,81 @@
                         </li>
                     </ul>
                 </div>
-                </ul>
-            
-                    <form class="footer-submit">
-                        <div class="footer-submit-container">
-                            <b class="submit-title">Подпишитесь на рассылку</b>
-                            
-                                <label for="email" class="footer-label"></label>
-                                <input type="email"
-                                name="mail"
-                                id="email"
-                                class="footer-submit-input"
-                                placeholder="E-mail">
-                                <button type="submit" class="footer-submit-button">Подписаться
-                                    <svg class="send-icon" width="24px" height="24px">
-                                        <use href="/symbol-defs.svg#icon-send"></use>
-                                    </svg>
-                                </button>
-                        </div>
-                    </form>
-                    
             </div>
-        
+
+            <form class="footer-submit">
+                <div class="footer-submit-container">
+
+                    <label for="email" class="footer-label">Подпишитесь на рассылку</label>
+                    <div class="d-flex">
+                        <input type="email" name="mail" id="email" class="footer-submit-input" placeholder="E-mail">
+                        <button type="submit" class="footer-submit-button">Подписаться
+                            <svg class="send-icon" width="24px" height="24px">
+                                <use href="/symbol-defs.svg#icon-send"></use>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </form>
+
+            <!-- </div> -->
+
     </footer>
 
-<div class="backdrop is-hidden" data-modal>
-    <div class="modal">
-        
-        
-        <form class="modal-form">
-            <b class="modal-title">Оставьте свои данные, мы вам перезвоним</b>
-            <div class="form-field">      
-                
-                <label for="name" class="label-title" class="input-label">Имя</label>
-                <span class="input-wrap">
-                <input type="text" class="input-field" name="name" id="name" autofocus placeholder="">
-                <svg class="modal-icon" width="12px" height="12px">
-                    <use href="./symbol-defs.svg#icon-name"></use>
-                </svg>  
-                </span>
-            </div>
-            <div class="form-field">
-                <label for="tel" class="label-title">Телефон</label>
-                <span class="input-wrap">
-                    <input type="text" class="input-field" name="name" id="name" autofocus placeholder="">
-                    <svg class="modal-icon" width="12px" height="12px">
-                        <use href="./symbol-defs.svg#icon-tel"></use>
-                    </svg>  
-                    </span>
-            </div>
-            <div class="form-field" class="label-title">
-                <label for="mail" class="label-title">Почта</label>
-                <span class="input-wrap">
-                    <input type="text" class="input-field" name="name" id="name" autofocus placeholder="">
-                    <svg class="modal-icon" width="12px" height="12px">
-                        <use href="./symbol-defs.svg#icon-mail"></use>
-                    </svg>  
-                    </span>
-            </div>
-            <div class="form-field">
-                <label for="comment" class="label-title">Комментарий</label>
-                <textarea name="comment" id="comment" class="textarea" placeholder="Введите текст" class="modal-comment"></textarea>
-            </div>
-            <div class="form-field">
-                <label class="checkbox-link">
-                    <input type="checkbox" name="license" id="license" class="checkbox">
-                    Соглашаюсь с рассылкой и принимаю 
-                    <a href="">Условия договора</a>
-                </label>
-            </div>
-            <button type="submit" class="modal-send">Отправить</button>
-        </form>
-        
-        <button type="button" class="btn-close" data-modal-close>x</button>
-    </div>
-</div>
+    <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
 
-<script src="./js/modal.js"></script>
+
+            <form class="modal-form">
+                <b class="modal-title">Оставьте свои данные, мы вам перезвоним</b>
+                <div class="form-field">
+
+                    <label for="name" class="label-title" class="input-label">Имя</label>
+                    <span class="input-wrap">
+                        <input type="text" class="input-field" name="name" id="name" autofocus placeholder="">
+                        <svg class="modal-icon" width="12px" height="12px">
+                            <use href="./symbol-defs.svg#icon-name"></use>
+                        </svg>
+                    </span>
+                </div>
+                <div class="form-field">
+                    <label for="tel" class="label-title">Телефон</label>
+                    <span class="input-wrap">
+                        <input type="text" class="input-field" name="name" id="name" autofocus placeholder="">
+                        <svg class="modal-icon" width="12px" height="12px">
+                            <use href="./symbol-defs.svg#icon-modal-tel"></use>
+                        </svg>
+                    </span>
+                </div>
+                <div class="form-field" class="label-title">
+                    <label for="mail" class="label-title">Почта</label>
+                    <span class="input-wrap">
+                        <input type="text" class="input-field" name="name" id="name" autofocus placeholder="">
+                        <svg class="modal-icon" width="12px" height="12px">
+                            <use href="./symbol-defs.svg#icon-modal-mail"></use>
+                        </svg>
+                    </span>
+                </div>
+                <div class="form-field">
+                    <label for="comment" class="label-title">Комментарий</label>
+                    <textarea name="comment" id="comment" class="textarea" placeholder="Введите текст"
+                        class="modal-comment"></textarea>
+                </div>
+                <div class="form-field">
+                    <label class="checkbox-link">
+                        <input type="checkbox" name="license" id="license" class="checkbox">
+                        Соглашаюсь с рассылкой и принимаю
+                        <a href="">Условия договора</a>
+                    </label>
+                </div>
+                <button type="submit" class="modal-send">Отправить</button>
+            </form>
+
+            <button type="button" class="btn-close" data-modal-close>x</button>
+        </div>
+    </div>
+
+    <script src="./js/modal.js"></script>
 </body>
 
 </html>
