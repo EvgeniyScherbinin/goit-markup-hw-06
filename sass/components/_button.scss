@@ -1,4 +1,4 @@
-.button {
+.hero__button {
     background-color: var(--accent-color);
     color: var(--background-color);
     font-weight: 700px;
@@ -12,9 +12,10 @@
     padding: 10px 32px;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     transition-duration: 250ms;
+    &:hover,
+    &:focus {
+      background-color: #188ce8;
+    }
   }
   
-  button:hover,
-  button:focus {
-    background-color: #188ce8;
-  }
+  
